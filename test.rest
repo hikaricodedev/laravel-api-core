@@ -1,0 +1,29 @@
+GET http://localhost:8000/api/test-api
+Content-Type: application/json
+Authorization: token
+###
+POST http://localhost:8000/api/register
+content-type: application/json
+
+{
+    "email" : "mail@mail.com",
+    "name" : "Diki",
+    "password" : "password2",
+    "password_confirmation" : "password2"
+}
+
+###
+POST http://localhost:8000/api/login
+content-type: application/json
+
+{
+    "email" : "mail@mail.com",
+    "password" : "password2"
+}
+
+###
+
+GET http://localhost:8000/api/test-token
+Accept: application/json
+Content-Type: application/json
+Authorization: 1|ipBic8cMYH0DHFI9LWRgazEbW9YKi9ki3ZWXj9Lxbbfc7998
