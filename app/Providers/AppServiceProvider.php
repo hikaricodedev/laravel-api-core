@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    #[Reportable(AuthenticationException::class, ApiAuthenticationExceptionHandler::class)]
+
     public function boot(): void
     {
 

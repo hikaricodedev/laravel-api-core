@@ -3,7 +3,8 @@ Content-Type: application/json
 Authorization: token
 ###
 POST http://localhost:8000/api/register
-content-type: application/json
+Accept: : application/json
+Content-Type: application/json
 
 {
     "email" : "mail@mail.com",
@@ -14,7 +15,8 @@ content-type: application/json
 
 ###
 POST http://localhost:8000/api/login
-content-type: application/json
+Content-Type: : application/json
+Accept: application/json
 
 {
     "email" : "mail@mail.com",
@@ -25,5 +27,4 @@ content-type: application/json
 
 GET http://localhost:8000/api/test-token
 Accept: application/json
-Content-Type: application/json
-Authorization: 1|ipBic8cMYH0DHFI9LWRgazEbW9YKi9ki3ZWXj9Lxbbfc7998
+Authorization: Bearer 1|RQj6LjwmF2hAn5MkdSaXPIddIXuvo8afK5OvD2tMb2b3bfe2
